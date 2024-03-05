@@ -1,0 +1,466 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYGH</title>
+    <meta charset="utf-8" />
+	<link rel="icon" href="images/nygh/crest.png">
+    <link rel="stylesheet" href="nanyang.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<!-- Wrapper -->
+<div id="wrapper">
+    <!-- Menu -->
+    <div class="topnav">
+        <a href="#" class="logo">
+            <span class="symbol"><img src="images/nygh/crest.png" alt="nygh crest" /></span>
+            <span class="nav-bar-title">Nanyang Girls' High School</span>
+        </a>
+        <div class="topnav-bar">
+
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">NY STORY</button>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Milestones</a>
+                        <a href="#">Architecture Transformation</a>
+                        <a href="#">Achievements</a>
+                        <a href="#">BOD & Management Team</a>
+                        <a href="#">Global Partners</a>
+                        <a href="#">Corporate Social Responsibility</a>
+                        <a href="#">Global Alumni</a>
+                        <a href="#">Financial Matters</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">NY EXPERIENCE</button>
+                    <div class="dropdown-content">
+                        <a href="#">Bilingual Bicultural Environment</a>
+                        <a href="#">Academic</a>
+                        <a href="#">Enrichment</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">NY CURRICULUM</button>
+                    <div class="dropdown-content">
+                        <a href="#">Curriculum Framework</a>
+                        <a href="#">Talent Development</a>
+                        <a href="#">Co-Curricular Activities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">JOIN US</button>
+                    <div class="dropdown-content">
+                        <a href="#">As Students</a>
+                        <a href="#">As Nanyang Girls' Boarding Boarders</a>
+                        <a href="#">As Member of Alumni Association</a>
+                        <a href="#">As Staff</a>
+                        <a href="#">As Canteen Operators</a>  
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">QUICK LINKS</button>
+                    <div class="dropdown-content">
+                        <a href="#">News</a>
+                        <a href="#">School Calendar</a>
+                        <a href="#">NYGH Portal</a>
+                        <a href="#">NLDP Microsite</a>
+                        <a href="#">Student Learning Space</a>
+                        <a href="#">NY Boarding School</a>
+                        <a href="#">NYGH Library</a>
+                        <a href="#">Newsleters</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+                <!-- <div class="dropdown">
+                    <button class="langbtn">EN | CN</button>
+                </div> -->
+            </div>
+
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="search..." name="search">
+                    <button type="submit">
+                        <span class="material-symbols-outlined">search</span> 
+                    </button>
+                </form>
+            </div>
+            <div class="dropdown">
+                <div class="langbtn-contain">
+                    <button class="langbtn-e">EN</button>
+                    <a id="divider"> | </a>
+                    <button class="langbtn-c">CN</button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Side navigation -->
+        
+         <div class="sidenav-bar">
+
+            <div class="bar-button" onclick="toggleSidebar()">Sidebar</div>
+            <div class="sidebar-links">
+                <div class="dropdown">
+                    <button class="side-nav-dropdown">NY STORY</button>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Milestones</a>
+                        <a href="#">Architecture Transformation</a>
+                        <a href="#">Achievements</a>
+                        <a href="#">BOD & Management Team</a>
+                        <a href="#">Global Partners</a>
+                        <a href="#">Corporate Social Responsibility</a>
+                        <a href="#">Global Alumni</a>
+                        <a href="#">Financial Matters</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="side-nav-dropdown">NY EXPERIENCE</button>
+                    <div class="dropdown-content">
+                        <a href="#">Bilingual Bicultural Environment</a>
+                        <a href="#">Academic</a>
+                        <a href="#">Enrichment</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="side-nav-dropdown">NY CURRICULUM</button>
+                    <div class="dropdown-content">
+                        <a href="#">Curriculum Framework</a>
+                        <a href="#">Talent Development</a>
+                        <a href="#">Co-Curricular Activities</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="side-nav-dropdown">JOIN US</button>
+                    <div class="dropdown-content">
+                        <a href="#">As Students</a>
+                        <a href="#">As Nanyang Girls' Boarding Boarders</a>
+                        <a href="#">As Member of Alumni Association</a>
+                        <a href="#">As Staff</a>
+                        <a href="#">As Canteen Operators</a>  
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="side-nav-dropdown">QUICK LINKS</button>
+                    <div class="dropdown-content">
+                        <a href="#">News</a>
+                        <a href="#">School Calendar</a>
+                        <a href="#">NYGH Portal</a>
+                        <a href="#">NLDP Microsite</a>
+                        <a href="#">Student Learning Space</a>
+                        <a href="#">NY Boarding School</a>
+                        <a href="#">NYGH Library</a>
+                        <a href="#">Newsleters</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="search-container-sidebar">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="search..." name="search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+
+                <div class="dropdown">
+                    <div class="langbtn-contain">
+                        <button class="langbtn-e">EN</button>
+                        <a id="divider"> | </a>
+                        <button class="langbtn-c">CN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+   
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner">
+            <!-- Logo -->
+            <a href="#" class="title">
+                <span class="title">The <span class="underlined">Nanyang</span> Experience</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            <div id="header-image" class="carousel">
+                <div class="carousel-inner">
+                    <div class="slide">
+                        <img src="images/nygh/softball.png" alt="Image of Nanyang girls playing Softball" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/nygh/judo.png" alt="Image of Nanyang girls doing Judo" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/nygh/string.png" alt="Image of the Nanyang Girls' String Ensemble" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/nygh/drama.png" alt="Image of the Nanyang Girls' Theatre Club" />
+                    </div>
+                    <div class="slide">
+                        <img src="images/nygh/guides.png" alt="Image of the Nanyang Girls' Girl Guides" />
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="announcements">
+                <div class="section-header">
+                    <h1>Announcements</h1>
+                </div>
+                <section class="tiles">
+                    
+                    <div class="tile">
+                        <article class="style">
+        
+                            <a href=#>
+                                <h2>IMPORTANT INFORMATION FOR AY2024 SECONDARY ONE STUDENTS</h2>
+                                <div class="content">
+                                    <p>21 Dec 2023</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="tile">
+                        <article class="style">
+                           
+                            <a href=#>
+                                <h2>AY2024 SALE OF TEXTBOOKS AND SCHOOL UNIFORMS</h2>
+                                <div class="content">
+                                    <p>21 Dec 2023</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="tile">
+                        <article class="style">
+                           
+                            <a href=#>
+                                <h2>AY2024 SECONDARY ONE APPEAL</h2>
+                                <div class="content">
+                                    <p>21 Dec 2023</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+    
+
+            </section>
+            
+            
+            
+            <section class="story">
+
+                <div class="section-header2">
+                    <h1>The Nanyang Story</h1>
+                </div>
+
+                <div class="story-content">
+                    Founded in 1917, Nanyang Girls High School (NYGH) is a premier independent and Special Assistance Plan school. Given its vibrant history and rich tradition in bicultural education, NYGH prides itself in providing an all-round holistic education, allowing all girls to thrive in the globalised world of the 21st century.
+                </div>
+
+                <section class="story-tiles">
+                    <div class="story-tile">
+                        <article class="style">
+                            <a href=#>
+                                <h2>勤</h2>
+                                <p>DILIGENCE</p>
+                            </a> 
+                        </article>
+                    </div>
+                    <div class="story-tile">
+                        <article class="style">
+                            <a href=#>
+                                <h2>慎</h2>
+                                <p>PRUDENCE</p>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="story-tile">
+                        <article class="style">       
+                            <a href=#>
+                                <h2>端</h2>
+                                <p>RESPECTABILITY</p>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="story-tile">
+                        <article class="style">
+                            <a href=#>
+                                <h2>朴</h2>
+                                <p>SIMPLICITY</p>
+                            </a>
+                        </article>
+                    </div>
+
+                    
+                </section>
+                <button type="button">Click to learn more
+
+                </button>
+
+            </section>
+            <section class="curri">
+                <div class="section-header">
+                    <h1>The Nanyang Curriculum</h1>
+                </div>
+
+                <div class="curri-content">
+
+                    <div ID="story-content">
+                        In NYGH, we believe students are keen to learn and are highly driven. The programme therefore aims to provide an enriching and challenging learning experience for high-ability students of diverse talents and background, and is built upon the school’s extensive heritage and culture of bilingualism, excellence and service.
+                    </div>
+                    <div class="diagram">
+                        <span class="symbol"><img src="images/nygh/curriculum.png" alt="Diagram explaining NYGH's curriculum philosophy" /></span>
+                    </div>
+                </div>
+
+                <button type="button">Click to learn more
+                    
+                </button>
+
+
+            </section>
+                
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <section class="menu">
+                <div class="content">
+                    <h1 class="header">Nanyang Girls' High School</h1>
+                    <img src="images/nygh/crest.png" alt="Nanyang Crest" />
+                </div>
+
+                <div class="content">
+                    <button class="head">NY STORY</button>
+                    <a href="#">About Us</a>
+                    <a href="#">Milestones</a>
+                    <a href="#">Architecture Transformation</a>
+                    <a href="#">Achievements</a>
+                    <a href="#">BOD & Management Team</a>
+                    <a href="#">Global Partners</a>
+                    <a href="#">Corporate Social Responsibility</a>
+                    <a href="#">Global Alumni</a>
+                    <a href="#">Financial Matters</a>
+                </div>
+                <div class="content">
+                    <button class="head">NY EXPERIENCE</button>
+                    <a href="#">Bilingual Bicultural Environment</a>
+                    <a href="#">Academic</a>
+                    <a href="#">Enrichment</a>
+                </div>
+                <div class="content">
+                    <button class="head">NY CURRICULUM</button>
+                    <a href="#">Curriculum Framework</a>
+                    <a href="#">Talent Development</a>
+                    <a href="#">Co-Curricular Activities</a> 
+                </div>
+                <div class="content">
+                    <button class="head">JOIN US</button>
+                    <a href="#">As Students</a>
+                    <a href="#">As Nanyang Girls' Boarding Boarders</a>
+                    <a href="#">As Member of Alumni Association</a>
+                    <a href="#">As Staff</a>
+                    <a href="#">As Canteen Operators</a> 
+
+                </div>
+                <div class="content">
+                    <button class="head">QUICK LINKS</button>
+                    <a href="#">News</a>
+                    <a href="#">School Calendar</a>
+                    <a href="#">NYGH Portal</a>
+                    <a href="#">NLDP Microsite</a>
+                    <a href="#">Student Learning Space</a>
+                    <a href="#">NY Boarding School</a>
+                    <a href="#">NYGH Library</a>
+                    <a href="#">Newsleters</a>
+                    <a href="#">Contact Us</a>
+                </div>         
+            </section>
+            <hr class="line">
+            <section class="terms">
+                <div class="misc">
+                    <button>Contact Us</button>
+                    <button>REACH</button>
+                    <button>Report Vulnerability</button>
+                    <button>Privacy Statement</button>
+                    <button>Terms of Use</button>
+                </div>
+
+                <div class="socials">
+                    <div class="icons">
+                        <a href="#" class="fa fa-instagram" alt="Instagram logo"></a>
+                        <a href="#" class="fa fa-linkedin" alt="Linkedin logo"></a>
+                        <a href="#" class="fa fa-github" alt="Github logo"></a>
+                        <a href="#" class="fa fa-envelope" alt="Email symbol"></a>
+                    </div>
+                </div>
+
+
+            </section>
+           
+            <div class="copyright">
+                <li>&copy; Zyn's Portfolio. All rights reserved</li>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+<!-- JavaScript -->
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateCarousel();
+    }
+
+    function updateCarousel() {
+        const offset = -currentSlide * 100;
+        document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+    }
+
+    // Automatically advance slides every 3 seconds
+    setInterval(nextSlide, 3000);
+
+</script> 
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.querySelector('.sidebar-links');
+        sidebar.classList.toggle('open'); // Toggle the 'open' class
+        var content = document.querySelector('.side-nav-dropdown');
+        content.classList.toggle('open');
+        
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>

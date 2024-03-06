@@ -22,16 +22,13 @@ body{
 
 .topnav {
     display: flex;
-    justify-content: space-between; /* Align items on each end of the container */
-    align-items: center; /* Align items vertically */
-    /* padding: 10px; Add padding for spacing */
+    justify-content: space-between; 
+    align-items: center; 
     position: relative;
     top: 0;
-    /* width: 100%; */
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 1%;
-    /* border-bottom: 2px solid #01376B; Add a solid border to the bottom */
 }
 
 .nav-bar-title {
@@ -47,7 +44,7 @@ body{
 
 .logo {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
     padding-left: 2%;
 }
 
@@ -81,7 +78,7 @@ a {
 }
 
 
-/* Dropdown container (hidden by default) */
+/* Dropdown Container Items */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -89,7 +86,6 @@ a {
     padding-right: 10px; 
 }
 
-/* Dropdown Button */
 .dropbtn {
     color: #01376B;
     font-style: "Inter";
@@ -114,18 +110,15 @@ a {
 }
 
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
     z-index: 1;
     background-color: white;
-    border: 1px solid transparent; /* Initially transparent border */
-    border-radius: 5px; /* Rounded corners */
-
+    border: 1px solid transparent; 
+    border-radius: 5px; 
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: #01376B;
     text-decoration: none;
@@ -137,43 +130,35 @@ a {
    
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #b6dbec;
     color: #01376B;
-    border-color: #01376B; /* Change border color when opened */
+    border-color: #01376B; 
 
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
     border-color: #01376B; 
 }
 
-/* Style the search box */
+/* Search box */
 .search-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border-radius: 10px; */
     overflow: hidden;
-    /* height: max-content; */
     padding-left: 20px;
     justify-self: center;
-    
-    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); Inner shadow effect */
 }
 
 .search-container input[type=text] {
-    padding: 5px; /* Increase padding for better appearance */
-    font-size: 0.8vw; /* Increase font size for better readability */
+    padding: 5px; 
+    font-size: 0.8vw; 
     border: none;
-    border-radius: 10px; /* Rounded edges */
-    outline: none; /* Remove outline */
-    box-shadow: inset 0 0 4px rgba(1,55,107, 0.9); /* Inner shadow effect */
-
-    
+    border-radius: 10px; 
+    outline: none; 
+    box-shadow: inset 0 0 4px rgba(1,55,107, 0.9); 
 }
 
 .search-container button {
@@ -182,11 +167,11 @@ a {
     float: right;
     padding: 1px 1px; 
     margin-left: 5px;
-    margin-right: 20px; /* Adjust margin for better alignment */
+    margin-right: 20px; 
     background: #b6dbec;
-    font-size: 1vw; /* Increase font size for better appearance */
+    font-size: 1vw; 
     border: none;
-    border-radius: 30px; /* Rounded edges */
+    border-radius: 30px; 
     cursor: pointer;
     font-weight: bold;
     color: #01376B;
@@ -202,7 +187,6 @@ a {
 .search-container ::placeholder{
     color: rgba(1,55,107, 0.5);
     font-weight: bold;
-    
 }
 
 .langbtn-contain{
@@ -220,8 +204,7 @@ a {
     font-size: 1vw;
     border: none;
     cursor: pointer;
-    background-color: white;
-    
+    background-color: white;  
 }
 
 .langbtn-c{
@@ -245,23 +228,18 @@ a {
 
 /* Side navigation */
 .sidenav-bar {
-    display: none; /* Initially hidden */
+    display: none; 
     flex-direction: column;
-    /* position: fixed; */
     top: 0;
     right: 20px;
-    width: auto; /* Set desired width */
+    width: auto; 
     background-color: #f9f9f9;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    transition: 0.5s; /* Add transition for smooth sliding effect */
-    z-index: 1000; /* Ensure it's above other content */
-    /* border: 1px solid transparent; */
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    z-index: 1000; 
     border-radius: 10px;
 }
 
-/* .sidenav-bar.open {
-    display: flex; 
-}  */
 
 .sidebar-links.open{
     display:flex;
@@ -274,11 +252,10 @@ a {
 }
 
 .bar-button {
-    display: none; /* Initially hidden */
+    display: none; 
     color: #b6dbec;
     padding: 8px 16px;
     margin-top: 15px;
-    /* font-size: 14px; */
     font-family: "Inter";
     font-weight: bold;
     font-size: calc(9px + 0.5vw);
@@ -302,12 +279,10 @@ a {
     border: 1px solid #01376B; 
     border-radius: 10px; 
     z-index: 1200;
-
 }
 
 .side-nav-dropdown{
     display: none;
-    /* font-size: 16px; */
     font-size: calc(10px + 1vw);
     color: #01376B;
     font-family: "Inter";
@@ -316,7 +291,6 @@ a {
     border: none;
     cursor: pointer;
     background-color: white;
-    
 }
 
 
@@ -334,7 +308,6 @@ a {
 
 .search-container-sidebar {
     display: none;
-    /* flex-direction: column; */
     align-items: center;
     margin-top: 20px;
 }
@@ -368,21 +341,18 @@ a {
 
 .sidebar-links .langbtn-e{
     font-size: calc(10px + 1vw);
-
 }
 
 .sidebar-links .langbtn-c{
-    font-size: calc(10px + 1vw);
-
-    
+    font-size: calc(10px + 1vw);    
 }
 
 /* Webpage header */
 
 #header {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    justify-content: center;
+    align-items: center;
     padding: 1%;
 }
 
@@ -454,6 +424,7 @@ a {
 }
 
 /* Announcement tile styles */
+
 .tiles {
     display: flex;
     flex-wrap: wrap;
@@ -464,11 +435,9 @@ a {
 
 .tile {
     width: 30%;
-    /* height: fit-content; */
-    /* height: auto; */
-    overflow: hidden; /* Hide overflow content */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: transform 0.3s ease; /* Add transition effect */
+    overflow: hidden; 
+    cursor: pointer; 
+    transition: transform 0.3s ease;
     background-color: #01376B;
     border-radius: 1.5vw;
     box-shadow: 10px 10px 4px #b6dbec;
@@ -476,7 +445,7 @@ a {
 }
 
 .tile:hover {
-    transform: translateY(-20px); /* Move tile up slightly on hover */
+    transform: translateY(-20px);
     background-color: #0078B0;
 }
 
@@ -496,8 +465,8 @@ a {
 
   
 .tile .content p {
-    font-size: 1vw; /* Adjust paragraph size */
-    color: white; /* Set paragraph color */
+    font-size: 1vw; 
+    color: white;
     padding-left: 2vw;
     margin: 0;
     position: absolute;
@@ -514,7 +483,6 @@ a {
     flex-direction: column;
     background-color: #b6dbec;
     padding-top: 2vh;
-    /* padding-bottom: 7vh; */
 }
 
 .story-content{
@@ -536,9 +504,9 @@ a {
 
 .story-tile{
     width: 15%;
-    overflow: hidden; /* Hide overflow content */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: transform 0.3s ease; /* Add transition effect */
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.3s ease; 
     background-color: white;
     border-radius: 1.5vw;
     box-shadow: 10px 10px 4px #0078B0;
@@ -562,7 +530,7 @@ a {
 }
 
 .story-tile:hover {
-    transform: translateY(-20px); /* Move tile up slightly on hover */
+    transform: translateY(-20px); 
 
 }
 
@@ -571,7 +539,7 @@ a {
 }
 
 .story button{
-    background-color: #01376B; /* Green */
+    background-color: #01376B;
     border: none;
     color: white;
     padding: 1.5vw 2vw;
@@ -582,7 +550,6 @@ a {
     font-family: "Inter";
     font-weight: bold;
     margin-top: 8%;
-    /* width: 20%; */
     align-self: center;
     border-radius: 1.5vw;
     cursor: pointer;
@@ -593,7 +560,6 @@ a {
 .story button:hover{
     background-color: #0078B0;
     box-shadow: 4px 4px 4px #01376B;
-
 }
 
 
@@ -605,7 +571,7 @@ a {
 
 .curri-content{
     display: flex;
-    align-items: center; /* Vertically center items */
+    align-items: center;
     margin-left: 10%;
     align-content: space-evenly;
 }
@@ -616,13 +582,12 @@ a {
     font-size: 1.5vw;
     font-family: "Inter";
     color: black;
-    line-height: 180%;   
-    
+    line-height: 180%;    
 }
 
 
 .curri button{
-    background-color: #01376B; /* Green */
+    background-color: #01376B; 
     border: none;
     color: white;
     padding: 1.5vw 2vw;
@@ -653,9 +618,8 @@ a {
 }
 
 .curri .symbol img {
-    max-width: 100%; /* Ensure image does not exceed container width */
+    max-width: 100%; 
     width: 30vw;
-    /* max-height: 320px; */
     margin-left:10%;
 }
 
@@ -672,9 +636,7 @@ a {
     justify-items: center;
     justify-content: space-evenly;
     align-items: flex-start;
-    /* padding-right: 2%; */
     margin-right: 4%;
-    
 }
 
 .menu .content{
@@ -696,7 +658,6 @@ a {
     margin: 0;
     width: fit-content;
     text-wrap: wrap;
-
 }
 
 .content img{
@@ -708,8 +669,7 @@ a {
     font-size: calc(3px + 1vw);
     font-family: "Inter";
     text-wrap: wrap;
-    color: #01376B;
-    
+    color: #01376B;  
 }
 
 #footer .head{
@@ -779,9 +739,7 @@ hr {
     display: flex;
     margin-top: 5%;
     margin-left: 1%;
-    margin-right: 2%;
-    
-   
+    margin-right: 2%; 
 }
 
 .socials .icons{
@@ -790,7 +748,6 @@ hr {
     flex-direction: row;
     align-content: space-evenly;
     margin-left: 2%;
-
 }
 
 .icons a{
@@ -817,6 +774,7 @@ hr {
 
 /* Responsive Adjustments */
 
+/*Responsive redesign for wider desktop*/
 
 @media  screen and (min-width: 1291) {
 
@@ -854,10 +812,12 @@ hr {
     
 }
 
+/*Responsive redesign for Desktop*/
+
 @media screen and (max-width: 1290px) { 
 
     .topnav-bar {
-        display: none; /* Hide top navigation */
+        display: none; 
     }
 
     .sidenav-bar {
@@ -876,7 +836,6 @@ hr {
         flex-direction: row;
         justify-content: center;
         justify-self: center;
-
     }
 
     .side-nav-dropdown.dropdown{
@@ -896,6 +855,7 @@ hr {
 }
 
 
+/*Responsive redesign for tablet*/
 
 @media screen and (max-width: 800px){
 
@@ -979,7 +939,6 @@ hr {
 
     .story{
         justify-content: center;
-        /* margin-bottom: 10%; */
         padding-bottom: 10%;
     }
 
@@ -1053,7 +1012,6 @@ hr {
         margin-top: 5%;
         padding: 10px 20px;
         font-size: calc(12px + 1vw);
-        /* padding: 0; */
     }
 
 
@@ -1082,6 +1040,8 @@ hr {
 
 }
 
+/*Responsive redesign for mobile phone*/
+
 @media screen and (max-width: 450px){
 
     .search-container-sidebar{
@@ -1099,7 +1059,6 @@ hr {
     }
 
     #footer .menu{
-        /* display: flex; */
         margin-top: 10%;
         margin-bottom: 10%;
         margin-left: 5%;
@@ -1153,7 +1112,6 @@ hr {
 
     .terms{
         flex-direction: column;
-        /* margin-left: 5%; */
     }
 
     .terms .misc{

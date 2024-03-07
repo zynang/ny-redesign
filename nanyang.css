@@ -9,8 +9,8 @@ body{
 
 .underlined {
     text-decoration: underline;
-    text-decoration-color: #FDEc00; /* Change the color */
-    text-decoration-thickness: 0.5vh; /* Change the thickness */
+    text-decoration-color: #FDEc00; 
+    text-decoration-thickness: 0.5vh; 
 }
 
 #wrapper{

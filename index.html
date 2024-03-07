@@ -82,7 +82,7 @@
 
             <div class="search-container">
                 <form action="/search" method="get">
-                    <input type="text" placeholder="search..." name="search">
+                    <input type="search" placeholder="search..." name="search">
                     <button type="submit">
                         <span class="material-symbols-outlined">search</span> 
                     </button>
@@ -101,7 +101,7 @@
         
          <div class="sidenav-bar">
 
-            <div class="bar-button" onclick="toggleSidebar()">Sidebar</div>
+            <div class="bar-button" onclick="toggleSidebar()" aria-label="Click to toggle side bar">Sidebar</div>
             <div class="sidebar-links">
                 <div class="dropdown">
                     <button class="side-nav-dropdown">NY STORY</button>
@@ -160,7 +160,7 @@
 
                 <div class="search-container-sidebar">
                     <form action="/search" method="get">
-                        <input type="text" placeholder="search..." name="search">
+                        <input type="search" placeholder="search..." name="search">
                         <button type="submit">Search</button>
                     </form>
                 </div>
@@ -225,7 +225,7 @@
                 </div>
                 <section class="tiles">
                     
-                    <div class="tile">
+                    <div class="tile" aria-label="Click to get announcement details">
                         <article class="style">
         
                             <a href=#>
@@ -236,7 +236,7 @@
                             </a>
                         </article>
                     </div>
-                    <div class="tile">
+                    <div class="tile" aria-label="Click to get announcement details">
                         <article class="style">
                            
                             <a href=#>
@@ -247,7 +247,7 @@
                             </a>
                         </article>
                     </div>
-                    <div class="tile">
+                    <div class="tile" aria-label="Click to get announcement details">
                         <article class="style">
                            
                             <a href=#>
@@ -277,7 +277,7 @@
                 </div>
 
                 <section class="story-tiles">
-                    <div class="story-tile">
+                    <div class="story-tile"  aria-label="Click to learn about Diligence">
                         <article class="style">
                             <a href=#>
                                 <h2>勤</h2>
@@ -285,7 +285,7 @@
                             </a> 
                         </article>
                     </div>
-                    <div class="story-tile">
+                    <div class="story-tile"  aria-label="Click to learn about Prudence">
                         <article class="style">
                             <a href=#>
                                 <h2>慎</h2>
@@ -293,7 +293,7 @@
                             </a>
                         </article>
                     </div>
-                    <div class="story-tile">
+                    <div class="story-tile"  aria-label="Click to learn about Respectability">
                         <article class="style">       
                             <a href=#>
                                 <h2>端</h2>
@@ -301,7 +301,7 @@
                             </a>
                         </article>
                     </div>
-                    <div class="story-tile">
+                    <div class="story-tile"  aria-label="Click to learn about Simplicity">
                         <article class="style">
                             <a href=#>
                                 <h2>朴</h2>
@@ -315,7 +315,7 @@
                 <button type="button">Click to learn more</button>
             </section>
 
-            
+
             <!--Curriculum Section-->
             <section class="curri">
                 <div class="section-header">
@@ -332,9 +332,7 @@
                     </div>
                 </div>
 
-                <button type="button">Click to learn more
-                    
-                </button>
+                <button type="button">Click to learn more</button>
 
 
             </section>

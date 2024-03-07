@@ -11,13 +11,12 @@ function updateCarousel() {
     document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
 }
 
-// Automatically advance slides every 3 seconds
 setInterval(nextSlide, 3000);
 
 
 function toggleSidebar() {
     var sidebar = document.querySelector('.sidebar-links');
-    sidebar.classList.toggle('open'); // Toggle the 'open' class
+    sidebar.classList.toggle('open'); 
     var content = document.querySelector('.side-nav-dropdown');
     content.classList.toggle('open');
     
